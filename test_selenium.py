@@ -12,7 +12,7 @@ class TestPHP(unittest.TestCase):
         chrome_options.add_argument('--window-size=1420,1080')
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--disable-gpu')
-        cls.driver = webdriver.Chrome("./chromedriver", options=chrome_options)
+        cls.driver = webdriver.Chrome("/usr/bin/chromedriver", options=chrome_options)
 
     def test_about_us_tab(self):
         self.driver.get("http://192.168.56.102:8083")
